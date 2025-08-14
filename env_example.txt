@@ -1,0 +1,13 @@
+# OpenAI Configuration
+OPENAI_API_KEY=your_openai_api_key_here
+
+# Pinecone Configuration
+PINECONE_API_KEY=your_pinecone_api_key_here
+PINECONE_ENVIRONMENT=your_pinecone_environment_here
+PINECONE_INDEX_NAME=christian-apologetics
+
+# Application Configuration
+MODEL_NAME=gpt-3.5-turbo
+EMBEDDING_MODEL=text-embedding-ada-002
+MAX_TOKENS=500
+TEMPERATURE=0.7 

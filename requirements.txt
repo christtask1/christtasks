@@ -1,0 +1,11 @@
+fastapi==0.108.0
+uvicorn[standard]==0.25.0
+python-dotenv==1.0.0
+openai==1.3.7
+pinecone-client==3.2.2
+python-multipart==0.0.6
+pydantic==2.5.3
+pydantic-core==2.14.6
+tiktoken==0.5.2
+sqlalchemy==2.0.23
+# Pinned OpenAI to v1 client API
