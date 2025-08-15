@@ -2,6 +2,7 @@
 
 - Request limits: 25 messages/day and 750 messages/month per user (by IP).
 - Answer length is enforced in `openai_service.py` (~300 words).
+# TEST COMMENT: Testing GitHub push functionality - this comment can be safely removed
 """
 
 from fastapi import APIRouter, HTTPException, Request
