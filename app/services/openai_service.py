@@ -34,7 +34,12 @@ class OpenAIService:
         """Generate embeddings for a list of texts"""
         try:
             from openai import OpenAI
-            client = OpenAI(api_key=self.openai_api_key, timeout=30.0)
+            # Explicitly create client with only supported parameters
+            client = OpenAI(
+                api_key=self.openai_api_key,
+                timeout=30.0,
+                max_retries=2
+            )
             response = client.embeddings.create(
                 model=self.embedding_model,
                 input=texts
@@ -47,7 +52,12 @@ class OpenAIService:
         """Generate a chat completion with optional context"""
         try:
             from openai import OpenAI
-            client = OpenAI(api_key=self.openai_api_key, timeout=60.0)
+            # Explicitly create client with only supported parameters
+            client = OpenAI(
+                api_key=self.openai_api_key,
+                timeout=60.0,
+                max_retries=2
+            )
             
             # Create system message with context
             if load_profile is not None:
