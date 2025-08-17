@@ -19,7 +19,7 @@ allowed_origins = [
     "http://localhost:3000",  # React dev server
     "http://localhost:8080",  # Vue dev server
     "http://localhost:5173",  # Vite dev server
-    "https://your-frontend-domain.com",  # Your production frontend
+    "https://christtask-arm06hrp1-christtasks-projects.vercel.app",  # Your production frontend
 ]
 
 # In development, allow all origins
