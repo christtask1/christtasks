@@ -120,6 +120,10 @@ async def chat(req: Request, request: ChatRequest):
 
         return ChatResponse(answer=answer, sources=sources, question=request.question)
     except Exception as e:
+        import traceback
+        error_details = traceback.format_exc()
+        print(f"❌ CHAT ERROR: {str(e)}")
+        print(f"❌ FULL TRACEBACK: {error_details}")
         raise HTTPException(status_code=500, detail=f"Error processing chat request: {str(e)}")
 
 
